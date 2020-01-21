@@ -80,7 +80,7 @@ class COCOEvalCap:
                 if verbose:
                     print("{}: {:.3f}".format(method, score))
                 score_dict[method] = score
-            if method.lower() == 'meteor':
+            if method == 'METEOR':
                 scorer.__del__()
         self.setEvalImgs()
 
