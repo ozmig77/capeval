@@ -28,7 +28,7 @@ class COCOEvalCap:
             'meteor': (Meteor, "METEOR"),
             'rouge': (Rouge, "ROUGE_L"),
             'cider': (Cider, "CIDEr"),
-            #'spice': (Spice, "SPICE"),
+            'spice': (Spice, "SPICE"),
         }
 
     def postprocess(self, caps):

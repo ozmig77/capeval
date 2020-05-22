@@ -78,13 +78,14 @@ class Spice:
             spice_scores.append(self.float_convert(item['scores']['All']['f']))
         average_score = np.mean(np.array(spice_scores))
         scores = []
-        import pudb;pudb.set_trace()
+        '''
         for image_id in imgIds:
             # Convert none to NaN before saving scores over subcategories
             score_set = {}
             for category, score_tuple in imgId_to_scores[image_id].items():
                 score_set[category] = {k: self.float_convert(v) for k, v in list(score_tuple.items())}
             scores.append(score_set)
+        '''
         return average_score, scores
 
     def method(self):
